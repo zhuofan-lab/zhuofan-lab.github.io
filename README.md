@@ -1,6 +1,6 @@
 ### 👋 你好，我是 [这里写你的名字]
 
-一名 [你的职业或身份，例如：软件工程师 / 学生 / 设计师]，热衷于 [你的兴趣领域，例如：Web 开发和开源项目]。
+一名 大三学生，热衷于计算机视觉。
 
 这个网站是我用来展示项目和分享知识的地方。很高兴您能来访！
 
@@ -16,6 +16,6 @@
 
 ### 📫 如何联系我
 
-* **Email**: `your.email@example.com`
+* **Email**: `22221247@bjtu.edu.cn`
 * **LinkedIn**: `https://linkedin.com/in/你的LinkedIn用户名`
 * **GitHub**: `https://github.com/你的GitHub用户名`
