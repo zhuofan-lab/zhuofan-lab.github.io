@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>zhuofan's Lab | CV / Generative Models</title>
+  <title>zhuofan's Lab</title>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
   <header class="hero">
     <div class="container">
-      <h1>👋 你好，我是 zhuofan</h1>
-      <p class="tagline">计算机本科生 · 视频生成 / 扩散模型方向 · 推荐算法实习</p>
+      <h1>zhuofan</h1>
+      <p class="tagline">计算机本科生 · 视频生成 / 扩散模型方向</p>
       <nav class="nav">
         <a href="#about">关于</a>
         <a href="#research">研究</a>
         <a href="#skills">技能</a>
-        <a href="#experience">经历</a>
+        <a href="#honors">荣誉</a>
         <a href="#contact">联系</a>
       </nav>
     </div>
@@ -25,28 +25,26 @@
   <main class="container">
 
     <section id="about" class="section">
-      <h2>🌱 关于我</h2>
+      <h2>关于我</h2>
       <p>
-        国内某高校计算机专业本科在读.
+        计算机科学与技术本科在读，对生成模型与机器学习理论感兴趣。
       </p>
       <p>
-        研究兴趣集中在 <strong>视频生成 / 扩散模型 / 增量学习</strong>，
-        熟悉 SD、FLUX、Wan2.1 等文生图（视频）模型，了解 DDPM、Flow Matching 等训练流程。
-        目前在工业界推荐算法岗实习，对算法落地与离线指标优化有一手经验。
+        目前关注视频扩散模型中的可控生成问题，也做过一些关于增量学习与白盒模型的研究尝试。
+        工业界在推荐算法方向有过实习经历。
       </p>
-      <p class="muted">"Stay curious, keep building." 🚀</p>
     </section>
 
     <section id="research" class="section">
-      <h2>🔬 研究与项目</h2>
+      <h2>研究与项目</h2>
 
       <article class="project">
-        <h3>🎬 基于 WAN-VACE 的参考图引导视频风格迁移</h3>
+        <h3>基于 Wan2.1-VACE 的参考图引导视频风格迁移</h3>
         <p>
           针对视频风格迁移中「风格一致性」与「内容保持」之间的平衡问题，
           基于 Wan2.1-VACE-1.3B 进行改进：在 DiT 每层 Transformer Block 后引入
           Cross-Attention 模块，将参考风格图像的 CLIP 特征显式注入去噪过程，
-          实现逐层风格引导.
+          实现逐层风格引导。
         </p>
         <p>
           在自建多风格视频数据集上对比 StyleMaster、TeleStyle、TokenFlow 等基线，
@@ -59,7 +57,7 @@
       </article>
 
       <article class="project">
-        <h3>🧠 信息动力学驱动的生理时序增量学习</h3>
+        <h3>信息动力学驱动的生理时序增量学习</h3>
         <p>
           面向临床 ECG 多域增量场景下的灾难性遗忘与黑盒不可解释性问题，
           改进 ReduNet 算法从类别增量适配到域增量：重新定义展开项 E 与压缩项 C，
@@ -68,17 +66,15 @@
         <p>
           相较 ER、CLSER、AGEM、GEM、SI 等回放与正则化方法，
           <strong>平均 AUC、平均准确率、BWT 三项指标均为最优</strong>。
-          作为学生一作论文已投 SCI 一区 JBHI 期刊。
         </p>
         <span class="tag">Incremental Learning</span>
         <span class="tag">White-box</span>
-        <span class="tag">SCI in Submission</span>
       </article>
 
     </section>
 
     <section id="skills" class="section">
-      <h2>🛠️ 技能栈</h2>
+      <h2>技能栈</h2>
       <div class="skills-grid">
         <div class="skill-card">
           <h3>生成模型</h3>
@@ -107,29 +103,22 @@
       </div>
     </section>
 
-    <section id="experience" class="section">
-      <h2>💼 经历</h2>
-      <div class="project-list">
-        <article class="project">
-          <h3>🏆 主要竞赛与荣誉</h3>
-          <ul style="color: var(--text-muted); padding-left: 20px; margin-top: 8px;">
-            <li>全国大学生数学竞赛 一等奖</li>
-            <li>北京市大学生数学竞赛（非数学类） 一等奖</li>
-            <li>蓝桥杯北京赛区 省级奖项</li>
-            <li>校级三好学生 · 优秀团员 · 学习优秀奖学金</li>
-          </ul>
-        </article>
-
-      </div>
+    <section id="honors" class="section">
+      <h2>荣誉</h2>
+      <ul class="honor-list">
+        <li>全国大学生数学竞赛 一等奖</li>
+        <li>北京市大学生数学竞赛（非数学类） 一等奖</li>
+        <li>蓝桥杯北京赛区 省级奖项</li>
+        <li>校级三好学生 · 优秀团员 · 学习优秀奖学金</li>
+      </ul>
     </section>
 
     <section id="contact" class="section">
-      <h2>📬 联系我</h2>
-      <p class="muted">如有合作 / 实习 / 学术交流意向，欢迎邮件联系：</p>
+      <h2>联系</h2>
       <ul class="contact-list">
-        <li>📧 Email: <a href="mailto:zhuofanxu962@gmail.com">通过邮件联系</a></li>
-        <li>🐙 GitHub: <a href="https://github.com/zhuofan-lab">@zhuofan-lab</a></li>
-        <li>✍️ Blog: <a href="coming soon">技术博客</a></li>
+        <li>Email: <a href="mailto:zhuofanxu962@gmail.com">zhuofanxu962@gmail.com</a></li>
+        <li>GitHub: <a href="https://github.com/zhuofan-lab">@zhuofan-lab</a></li>
+        <li>Blog: <a href="#">coming soon</a></li>
       </ul>
     </section>
 
@@ -137,7 +126,7 @@
 
   <footer class="footer">
     <div class="container">
-      <p>© 2026 zhuofan · Built with Jekyll & ❤️</p>
+      <p>© 2026 zhuofan</p>
     </div>
   </footer>
 
