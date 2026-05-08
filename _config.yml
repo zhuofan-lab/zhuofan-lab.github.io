@@ -1,17 +1,12 @@
 # 站点基本信息
 title: zhuofan's Lab
-subtitle: AI / Data Science Student
-description: 一个正在学习人工智能与数据科学的学生的小站
+subtitle: CV / Generative Models
+description: 计算机本科生，关注视频生成、扩散模型与推荐算法
 author: zhuofan
-email: your@email.com
 
 # URL 设置（部署后自动生效）
 url: "https://zhuofan-lab.github.io"
 baseurl: ""
-
-# 社交链接（按需填写）
-github_username: zhuofan-lab
-blog_url: https://yourblog.com
 
 # 主题与构建
 theme: minima

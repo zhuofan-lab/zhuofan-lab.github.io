@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>zhuofan's Lab | AI / Data Science Student</title>
+  <title>zhuofan's Lab | CV / Generative Models</title>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -11,11 +11,12 @@
   <header class="hero">
     <div class="container">
       <h1>👋 你好，我是 zhuofan</h1>
-      <p class="tagline">AI / Data Science Student · 喜欢动手，也喜欢分享</p>
+      <p class="tagline">计算机本科生 · 视频生成 / 扩散模型方向 · 推荐算法实习</p>
       <nav class="nav">
         <a href="#about">关于</a>
+        <a href="#research">研究</a>
         <a href="#skills">技能</a>
-        <a href="#projects">项目</a>
+        <a href="#experience">经历</a>
         <a href="#contact">联系</a>
       </nav>
     </div>
@@ -26,64 +27,109 @@
     <section id="about" class="section">
       <h2>🌱 关于我</h2>
       <p>
-        我是一名正在学习 <strong>人工智能 / 数据科学</strong> 的在校学生。
-        日常折腾 PyTorch、刷论文、做 Kaggle，也会把笔记整理成博客分享出来。
+        国内某高校计算机专业本科在读.
       </p>
       <p>
-        相信「Stay curious, keep building」，希望毕业前能做出几个有意思的开源项目 🚀
+        研究兴趣集中在 <strong>视频生成 / 扩散模型 / 增量学习</strong>，
+        熟悉 SD、FLUX、Wan2.1 等文生图（视频）模型，了解 DDPM、Flow Matching 等训练流程。
+        目前在工业界推荐算法岗实习，对算法落地与离线指标优化有一手经验。
       </p>
+      <p class="muted">"Stay curious, keep building." 🚀</p>
+    </section>
+
+    <section id="research" class="section">
+      <h2>🔬 研究与项目</h2>
+
+      <article class="project">
+        <h3>🎬 基于 WAN-VACE 的参考图引导视频风格迁移</h3>
+        <p>
+          针对视频风格迁移中「风格一致性」与「内容保持」之间的平衡问题，
+          基于 Wan2.1-VACE-1.3B 进行改进：在 DiT 每层 Transformer Block 后引入
+          Cross-Attention 模块，将参考风格图像的 CLIP 特征显式注入去噪过程，
+          实现逐层风格引导.
+        </p>
+        <p>
+          在自建多风格视频数据集上对比 StyleMaster、TeleStyle、TokenFlow 等基线，
+          <strong>CLIP-Style 指标 0.498，超越所有有参考图输入的基线</strong>，
+          内容保持指标同步优于 TokenFlow 与 TeleStyle。
+        </p>
+        <span class="tag">Diffusion</span>
+        <span class="tag">Video Generation</span>
+        <span class="tag">LoRA</span>
+      </article>
+
+      <article class="project">
+        <h3>🧠 信息动力学驱动的生理时序增量学习</h3>
+        <p>
+          面向临床 ECG 多域增量场景下的灾难性遗忘与黑盒不可解释性问题，
+          改进 ReduNet 算法从类别增量适配到域增量：重新定义展开项 E 与压缩项 C，
+          通过白盒模型逐层展示迭代过程，增强可解释性。
+        </p>
+        <p>
+          相较 ER、CLSER、AGEM、GEM、SI 等回放与正则化方法，
+          <strong>平均 AUC、平均准确率、BWT 三项指标均为最优</strong>。
+          作为学生一作论文已投 SCI 一区 JBHI 期刊。
+        </p>
+        <span class="tag">Incremental Learning</span>
+        <span class="tag">White-box</span>
+        <span class="tag">SCI in Submission</span>
+      </article>
+
     </section>
 
     <section id="skills" class="section">
       <h2>🛠️ 技能栈</h2>
       <div class="skills-grid">
         <div class="skill-card">
+          <h3>生成模型</h3>
+          <p>Wan2.1 · SD · FLUX · DDPM · Flow Matching</p>
+        </div>
+        <div class="skill-card">
+          <h3>训练 & 推理</h3>
+          <p>PyTorch · DDP · LoRA · Cross-Attention</p>
+        </div>
+        <div class="skill-card">
+          <h3>推荐算法</h3>
+          <p>精排模型 · R-Drop · 序列建模</p>
+        </div>
+        <div class="skill-card">
           <h3>编程语言</h3>
-          <p>Python · SQL · C++</p>
+          <p>Python · C · SQL</p>
         </div>
         <div class="skill-card">
-          <h3>机器学习</h3>
-          <p>PyTorch · scikit-learn · HuggingFace</p>
-        </div>
-        <div class="skill-card">
-          <h3>数据处理</h3>
-          <p>NumPy · Pandas · Matplotlib</p>
+          <h3>数学基础</h3>
+          <p>微积分 · 线性代数 · 概率论 · 最优化</p>
         </div>
         <div class="skill-card">
           <h3>开发工具</h3>
-          <p>Git · Linux · Jupyter · VS Code</p>
+          <p>Linux · Git · VS Code · Jupyter</p>
         </div>
       </div>
     </section>
 
-    <section id="projects" class="section">
-      <h2>📌 项目展示</h2>
-      <p class="muted">还在攒项目，等课程作业和实习项目稳定下来会陆续放上来 👀</p>
+    <section id="experience" class="section">
+      <h2>💼 经历</h2>
       <div class="project-list">
         <article class="project">
-          <h3>📊 Coursework Notes</h3>
-          <p>课程笔记与作业整理，包括机器学习、深度学习、统计学习方法等。</p>
-          <span class="tag">整理中</span>
+          <h3>🏆 主要竞赛与荣誉</h3>
+          <ul style="color: var(--text-muted); padding-left: 20px; margin-top: 8px;">
+            <li>全国大学生数学竞赛 一等奖</li>
+            <li>北京市大学生数学竞赛（非数学类） 一等奖</li>
+            <li>蓝桥杯北京赛区 省级奖项</li>
+            <li>校级三好学生 · 优秀团员 · 学习优秀奖学金</li>
+          </ul>
         </article>
-        <article class="project">
-          <h3>🤖 ML Practice</h3>
-          <p>从零手写经典机器学习算法，加深对原理的理解。</p>
-          <span class="tag">进行中</span>
-        </article>
-        <article class="project">
-          <h3>📝 Paper Reading</h3>
-          <p>Transformer / LLM 相关论文精读笔记，持续更新。</p>
-          <span class="tag">持续更新</span>
-        </article>
+
       </div>
     </section>
 
     <section id="contact" class="section">
       <h2>📬 联系我</h2>
+      <p class="muted">如有合作 / 实习 / 学术交流意向，欢迎邮件联系：</p>
       <ul class="contact-list">
-        <li>📧 Email: <a href="mailto:your@email.com">your@email.com</a></li>
+        <li>📧 Email: <a href="mailto:zhuofanxu962@gmail.com">通过邮件联系</a></li>
         <li>🐙 GitHub: <a href="https://github.com/zhuofan-lab">@zhuofan-lab</a></li>
-        <li>✍️ Blog: <a href="https://yourblog.com">yourblog.com</a></li>
+        <li>✍️ Blog: <a href="coming soon">技术博客</a></li>
       </ul>
     </section>
 
